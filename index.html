@@ -1,140 +1,172 @@
 <!doctype html>
 <html>
-  <head>
-    <title>My HTML Template</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <nav class="container full flex justify-between">
-      <img alt="Logo" />
-      <section>
-        <a href="#">About Us</a>
-        <a href="#">Our Services</a><a href="#">Our Services</a>
-        <a href="#">Ou Services</a> <button>Contact Us</button>
+<head>
+  <title>My HTML Template</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="container w-full flex justify-between">
+      <img class="logo" alt="Sora Logo" src="./assets/logo.svg" />
+      <section class="flex align-center">
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a><a href="#portfolio">Portfolio</a>
+        <button>
+          <p>Contact Us</p>
+          <div class="arrow">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.45508 18.6035L18.4551 6.60352M18.4551 6.60352H10.4551M18.4551 6.60352V14.6035"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </button>
       </section>
     </nav>
 
-    <header class="container full flex column">
-      <h1 class="uppercase text-center">Turn Ideas Into Reality</h1>
-      <p class="text-center">
+    <section id="title" class="container w-full h-full flex column justify-center">
+      <h1 class="uppercase text-center">Turn Ideas<br />Into Reality</h1>
+      <p class="text-center title-paragraph">
         We’re professional developers with 2+ years of experience
       </p>
-    </header>
-
-    <section class="container flex">
-      <article class="half flex column justify-center align-start">
-        <h2>Who We Are</h2>
-        <p>
-          At Sora.id, we specialize in creating user-friendly and visually
-          stunning designs. Our team of experts has a wealth of experience in
-          UI/UX design and is dedicated to delivering top-notch solutions for
-          your business.
-        </p>
-        <button>Contact Us</button>
-      </article>
-      <article class="half flex justify-center align-center">
-        <img alt="Circle" />
-      </article>
     </section>
+    <div class="layer"></div>
+    <div class="background"></div>
+  </header>
 
-    <section class="container">
-      <div>
-        <h2>Our Services</h2>
-        <h3>Providing Comprehensive Solution For Your Business</h3>
-      </div>
-      <article>
-        <div>
-          <h4>Company Profile</h4>
-          <p>
-            Showcase your company's identity and values with a professional
-            website featuring comprehensive information on your history, vision,
-            mission, and team.
-          </p>
-        </div>
-        <div>
-          <h4>Landing Page</h4>
-          <p>
-            Boost conversions with attractive and effective landing pages
-            designed for optimal functionality and visual appeal.
-          </p>
-        </div>
-        <div>
-          <h4>E-Menu</h4>
-          <p>
-            Enhance your restaurant or café's customer experience with
-            interactive, user-friendly digital menus for online viewing and
-            ordering.
-          </p>
-        </div>
-        <div>
-          <h4>Wedding Invitation</h4>
-          <p>
-            Create personal and elegant wedding invitations with detailed event
-            information, photo galleries, and RSVP features for easy guest
-            confirmation.
-          </p>
-        </div>
-        <div>
-          <h4>Online Exam</h4>
-          <p>
-            Conduct secure and efficient online exams for educational
-            institutions and businesses, with features like random questions,
-            timed tests, and result reports.
-          </p>
-        </div>
-        <div>
-          <h4>E-Commerce</h4>
-          <p>
-            Develop user-friendly e-commerce applications for seamless online
-            product sales, including shopping carts, payment gateways, and
-            integrated product management.
-          </p>
-        </div>
-        <div>
-          <h4>Custom Application</h4>
-          <p>
-            Design and develop tailored web and mobile applications to meet your
-            unique needs, from initial design to specific functionalities.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section class="full flex column justify-center align-center">
-      <h2>Our Portfolio</h2>
-      <h3>Here are just a few examples of our recent work.</h3>
-      <article>
-        <div>
-          <img alt="Hennessy Event" />
-          <h5>Hennessy Event</h5>
-          <p>Event Booking</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="container">
-      <article>
-        <h2>Excited to work with us?</h2>
-        <p>
-          Got a project on your mind? Collaboration? Let us know, and we'll soon
-          get back to you.
-        </p>
-      </article>
+  <section id="about" class="container flex">
+    <article class="half flex column justify-center align-start">
+      <h2>Who We Are</h2>
+      <p>
+        At Sora.id, we specialize in creating user-friendly and visually
+        stunning designs. Our team of experts has a wealth of experience in
+        UI/UX design and is dedicated to delivering top-notch solutions for
+        your business.
+      </p>
       <button>Contact Us</button>
-    </section>
+    </article>
+    <article class="circle-container half flex justify-center align-center">
+      <img alt="Circle" src="./assets/circles.svg" />
+    </article>
+    <img class="vector-1" alt="Vector 1" src="./assets/vector-1.svg" />
+  </section>
 
-    <footer class="full text-white">
-      <div class="container flex justify-between">
-        <p>©2024 SORA.ID</p>
-        <p>0877-8296-6321 | Our Instagram</p>
+  <section id="services" class="container">
+    <div>
+      <h2>Our Services</h2>
+      <h3>Providing Comprehensive Solution For<br /> Your Business</h3>
+    </div>
+    <article>
+      <div class="list">
+        <h4>Company Profile</h4>
+        <p>
+          Showcase your company's identity and values with a professional
+          website featuring comprehensive information on your history, vision,
+          mission, and team.
+        </p>
       </div>
-    </footer>
-  </body>
+      <div class="list">
+        <h4>Landing Page</h4>
+        <p>
+          Boost conversions with attractive and effective landing pages
+          designed for optimal functionality and visual appeal.
+        </p>
+      </div>
+      <div class="list">
+        <h4>E-Menu</h4>
+        <p>
+          Enhance your restaurant or café's customer experience with
+          interactive, user-friendly digital menus for online viewing and
+          ordering.
+        </p>
+      </div>
+      <div class="list">
+        <h4>Wedding Invitation</h4>
+        <p>
+          Create personal and elegant wedding invitations with detailed event
+          information, photo galleries, and RSVP features for easy guest
+          confirmation.
+        </p>
+      </div>
+      <div class="list">
+        <h4>Online Exam</h4>
+        <p>
+          Conduct secure and efficient online exams for educational
+          institutions and businesses, with features like random questions,
+          timed tests, and result reports.
+        </p>
+      </div>
+      <div class="list">
+        <h4>E-Commerce</h4>
+        <p>
+          Develop user-friendly e-commerce applications for seamless online
+          product sales, including shopping carts, payment gateways, and
+          integrated product management.
+        </p>
+      </div>
+      <div class="list">
+        <h4>Custom Application</h4>
+        <p>
+          Design and develop tailored web and mobile applications to meet your
+          unique needs, from initial design to specific functionalities.
+        </p>
+      </div>
+    </article>
+    <img class="vector-2" alt="Vector 2" src="./assets/vector-2.svg" />
+  </section>
+
+  <section id="portfolio" class="w-full flex column justify-center align-center">
+    <h2>Our Portfolio</h2>
+    <h3 class="text-center">Here are just a few examples <br /> of our recent work.</h3>
+    <article class="card-list">
+      <div class="flex column">
+        <div class="card" alt="Hennessy Event"></div>
+        <h5>Giri Art - Telkom University</h5>
+        <p>E-Commerce</p>
+      </div>
+      <div class="flex column">
+        <div class="card" alt="Hennessy Event"></div>
+        <h5>The Token People</h5>
+        <p>Company Profile</p>
+      </div>
+      <div class="flex column">
+        <div class="card" alt="Hennessy Event"></div>
+        <h5>Hennessy Event</h5>
+        <p>Event Booking</p>
+      </div>
+      <div class="flex column">
+        <div class="card" alt="Hennessy Event"></div>
+        <h5>Elegant Wedding Invitation</h5>
+        <p>Wedding Invitation</p>
+      </div>
+      <div class="flex column">
+        <div class="card" alt="Hennessy Event"></div>
+        <h5>Nitra Jaya</h5>
+        <p>E-commerce</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="end container flex justify-between align-center">
+    <article>
+      <h2>Excited to<br /> work with us?</h2>
+      <p>
+        Got a project on your mind? Collaboration? Let us know, and we'll soon
+        get back to you.
+      </p>
+    </article>
+  </section>
+
+  <footer class="w-full text-white">
+    <div class="container flex justify-between">
+      <p>©2024 SORA.ID</p>
+      <p>0877-8296-6321 | Our Instagram</p>
+    </div>
+  </footer>
+</body>
+
 </html>

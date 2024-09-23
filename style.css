@@ -4,12 +4,28 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Manrope", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-.full {
+body {
+  font-family: "Manrope", sans-serif;
+  background: #030912;
+  color: #ffffff;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.w-full {
   width: 100%;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .half {
@@ -17,9 +33,32 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 6%;
+}
+
+.vector-1 {
+  position: absolute;
+  filter: blur(90px);
+  z-index: -1;
+  top: 20%;
+  right: 10%;
+  width: 60%;
+}
+
+.vector-2 {
+  position: absolute;
+  filter: blur(90px);
+  z-index: -1;
+  top: 5%;
+  left: -10%;
+  width: 60%;
+}
+
+#services {
+  position: relative;
+  padding-top: 62px;
+  padding-bottom: 62px;
 }
 
 .flex {
@@ -78,7 +117,240 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-size: 156px;
+  line-height: 146px;
+}
+
+h2 {
+  font-size: 16px;
+  color: #02beac;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.title-paragraph {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+#title {
+  padding-top: 62px;
+}
+
+#about {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 62px;
+}
+
+#about p {
+  margin-top: 12px;
+  font-size: 20px;
+  padding-right: 156px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid #ffffff80;
+  padding: 28px 0px;
+  opacity: 50%;
+  transition: all 1s;
+  cursor: default;
+}
+
+.list:hover {
+  opacity: 100%;
+}
+
+.list h4 {
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.list p {
+  width: 50%;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container img {
+  width: 400px;
+}
+
+#portfolio {
+  padding-top: 62px;
+  padding-bottom: 100px;
+  background: url("./assets/portfolio-bg.png");
+  background-size: cover;
+}
+
+#portfolio h3 {
+  line-height: 46px;
+}
+
+.card-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 342px;
+  height: 342px;
+  border-radius: 32px;
+  background: #d9d9d9;
+}
+
+.end {
+  background: url("./assets/end-bg.png");
+  background-size: cover;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.end h2 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 48px;
+}
+
+.end p {
+  margin-top: 16px;
+  font-weight: 400;
+  color: #fff;
+  width: 250px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./assets/layer-img.png");
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  background-size: 100% 100%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./assets/start-bg.png");
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+nav.container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo {
+  height: 42px;
+}
+
+nav {
+  position: absolute;
+}
+
+nav > section > * {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+header {
+  position: relative;
+  height: 40vw;
+}
+
 footer {
   background-color: #121a1b;
   padding: 12px 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  background: #fff;
+  color: #030b16;
+  border: 1px solid #2c2d2f;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+button:active {
+  background: #c5c5c5;
+}
+
+button:hover .arrow {
+  background: #e0e0e0;
+  color: #13c1c2;
+}
+
+button:active .arrow {
+  background: #c5c5c5;
+}
+
+button p {
+  text-align: center;
+  font-weight: 700;
+  padding: 0px 8px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background: #13c1c2;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.arrow svg {
+  width: 22px;
+}
+
+.card-list h5 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-list p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #02beac;
 }
